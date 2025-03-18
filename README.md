@@ -8,6 +8,12 @@ The contents of these files will change over time. No changelog will be provided
 
 Feel free to fork this repository, and adapt it to your needs.
 
+# Demo
+
+<p align="center">
+    <img src="https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7" />
+</p>
+
 # How to use it
 
 Depending of your prefered IDE or plugin, you will have to set an *initial* primary rule that reads like this:
@@ -17,12 +23,6 @@ Use view_file (read) on `./codex-hub/codex-hub.md` and follow those instructions
 ```
 
 Alternatively, you can just copy the entire contents of `./codex-hub/codex-hub.md` and paste it into your prefered IDE or plugin as a custom instructions.
-
-# Demo
-
-<p align="center">
-    <img src="https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7" />
-</p>
 
 # Custom Instructions location
 
