@@ -4,7 +4,7 @@
    <img src="https://i.imgur.com/dYrqu3v.gif" />
 </p>
 
-My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and Cline.
+My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and/or Cline.
 
 These base instructions are tailored to be used in projects that use WordPress and some stack of choice.
 
