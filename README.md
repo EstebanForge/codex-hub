@@ -184,7 +184,7 @@ TODO
 
 TODO
 
-# To Ignore it or not
+# To Ignore or not to Ignore (sic)
 
 Will depend of your needs. You could share this folder inside your project. Or not.
 
