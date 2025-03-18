@@ -21,7 +21,7 @@ Alternatively, you can just copy the entire contents of `./codex-hub/codex-hub.m
 # Demo
 
 <p align="center">
-    ![image](https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7)
+    <img src="https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7" />
 </p>
 
 # Custom Instructions location
