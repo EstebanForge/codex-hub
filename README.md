@@ -192,7 +192,7 @@ TODO
 
 # To Ignore or Not to Ignore (sic)
 
-It will depend on your needs. You could share this folder inside your project—or not.
+It will depend on your needs. Your usage of it. The needs of your team, if there's any. You could share this folder inside your project—or not.
 
 Anyway, if you need to exclude it from your project's Git repositories, use a `.gitignore` file or a global `.gitignore`.
 
