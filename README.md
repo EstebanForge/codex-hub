@@ -18,9 +18,9 @@ Use view_file (read) on `./codex-hub/codex-hub.md` and follow those instructions
 
 Alternatively, you can just copy the entire contents of `./codex-hub/codex-hub.md` and paste it into your prefered IDE or plugin as a custom instructions.
 
-# Live example
+# Demo
 
-![image](https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7)
+<center>![image](https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7)</center>
 
 # Custom Instructions location
 
