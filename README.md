@@ -1,10 +1,10 @@
 # mAIestro: Codex-Hub for LLMs
 
-My personal knowledge base to work with LLM models on VSCode with Copilot, Windsurf and Cline.
+My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and Cline.
 
 These base instructions are tailored to be used in projects that use WordPress and some stack of choice.
 
-The contents of these files will change over time. No changelog will be provided. No time, I'm sorry.
+The contents of these files will change over time. No changelog will be provided. No time for that, I'm sorry.
 
 Feel free to fork this repository, and adapt it to your needs.
 
