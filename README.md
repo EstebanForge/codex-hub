@@ -18,6 +18,10 @@ Use view_file (read) on `./codex-hub/codex-hub.md` and follow those instructions
 
 Alternatively, you can just copy the entire contents of `./codex-hub/codex-hub.md` and paste it into your prefered IDE or plugin as a custom instructions.
 
+# Live example
+
+![image](https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7)
+
 # Custom Instructions location
 
 Depending of your IDE of choice, you will have to set the initial rule on different places.
