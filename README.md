@@ -1,4 +1,4 @@
-# Codex-Hub for LLMs
+# mAIestro: Codex-Hub for LLMs
 
 My personal knowledge base to work with LLM models on VSCode with Copilot, Windsurf and Cline.
 
