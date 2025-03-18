@@ -1,6 +1,6 @@
 # mAIestro: Codex-Hub for LLMs
 
-<p align="center>
+<p align="center">
    <img src="https://i.imgur.com/dYrqu3v.gif" />
 </p>
 
