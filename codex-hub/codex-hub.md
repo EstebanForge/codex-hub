@@ -17,7 +17,7 @@
     - Start simple → validate → consider performance → ensure junior-friendly → verify security
 
 ## Knowledge
-On Workspace root path: `/codex-hub/` folder and all it's subdirectories contains files with knowledge related to the project. Always refer to them before writing code.
+On Workspace root path: `./codex-hub/` folder and all it's subdirectories contains files with knowledge related to the project. Always refer to them before writing code.
 
 ## Technical Standards
 - PHP 8.2+ with strict_types
@@ -52,49 +52,14 @@ On Workspace root path: `/codex-hub/` folder and all it's subdirectories contain
 3. Validate: simplicity, performance, readability, necessity, security
 4. Write self-documenting code. Add comments that explains the "why", not just the "what"
 
-## Memory-Log Management Protocol
-- When asked to run a memory-log protocol, **NEVER** update or create a MEMORY[UUID] with these rules. User wants to store this memory at `/codex-hub/memory-logs/` as a file
+## Protocols
 
-## Memory-Log Management Protocol: initialization
-- When asked by command "init memory" or "memory init", you should read the entire `/codex-hub/memory-logs/` and `/codex-hub/docs/` folders and all files inside those folders
-- Newer memory logs should over-ride anything mentioned in older ones. If an old log says "do XYZ like this", but a newer log says "do XYZ like this", newer log must have precedence
-- Core memories precedence: `core-memory` logs will always have priority over traditional `memory`. If a `core-memory` says "do XYZ like this", it should always over-ride any `memory` that talks on how to "do XYZ like this"
-- After reading all the files, confirm to the user with "Memory restored. Ready for instructions."
+When `protocol` or `!p` command is received, followed by the protocol name, you need to read the corresponding file inside `./codex-hub/protocols/` folder, and follow the protocol instructions.
 
-## Memory-Log Management Protocol: save & update
-- [Activation] Only create memory-logs when explicitly requested by user, with phrases like: "Devlog what we did", "Devlog progress", "Devlog latest changes", "Devlog it", "Update your memory logs", "Devlog memory"
-- Do not memory-log by default
-- Path and file name format: `/codex-hub/memory-logs/memory_YYYY-MM-DD.md`
-- If file exists, append new contents to it
-- Format: Markdown with timestamps, file references, issues, solutions
-- Follow "File Structure (Memory-Log)" format
+Available protocols commands:
+- `memory init` > `./codex-hub/protocols/memory-init.md`
+- `memory update` > `./codex-hub/protocols/memory-update.md`
+- `merge memories` > `./codex-hub/protocols/merge-memories.md`
 
-### Memory-Log File Structure
-
-```markdown
-# Memory-log for YYYY-MM-DD
-
-## Time Markers
-HH:MM - Entry description
-
-## Changes Made
-- File: `path/to/file`
-  - Change description
-  - Reason for change
-
-## Issues and Solutions
-- Issue: Description
-  - Solution: Implementation
-
-## New/modified functionalities
-[Classes, methods, functions added/modified]
-```
-
-## Memory-Log Management Protocol: Core Memory
-- [Activation] Only when user tell us: "Core memory", "Memorize this", "Remember this", and followed by the contents that we should store
-- Get the core idea given by the user, arrange it, make it concise and useful for an AI agent coding to read it and follow it, without changing the original idea intent or adding new ideas by yourself
-- Path and file name format: `/codex-hub/memory-logs/core-memory_YYYY-MM-DD.md`
-
-## Other Protocols
-
-Read all files inside `/codex-hub/protocols/` folder.
+Example:
+`!p memory init`

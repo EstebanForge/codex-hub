@@ -6,7 +6,7 @@
 - `merge memory`
 - `merge memories`
 
-## Protocol action
+## Protocol Action
 Read all the files inside `/codex-hub/memory-logs`. Analyze them.
 
 Ignore files that begin with `core-memory_`.

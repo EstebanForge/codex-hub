@@ -13,10 +13,10 @@ Feel free to fork this repository, and adapt it to your needs.
 Depending of your prefered IDE or plugin, you will have to set an *initial* primary rule that reads like this:
 
 ```markdown
-Read the file `/codex-hub/codex-hub.md` in this workspace and execute the instructions contained within.
+Use view_file (read) on `./codex-hub/codex-hub.md` and follow those instructions.
 ```
 
-Alternatively, you can just copy the entire contents of `/codex-hub/codex-hub.md` and paste it into your prefered IDE or plugin as a custom instructions.
+Alternatively, you can just copy the entire contents of `./codex-hub/codex-hub.md` and paste it into your prefered IDE or plugin as a custom instructions.
 
 # Custom Instructions location
 
@@ -30,7 +30,7 @@ VSCode custom instructions [full documentation here](https://code.visualstudio.c
 
 For rules to take effect on a single Workspace, you can put the initial rule on:
 
-`/.github/copilot-instructions.md`
+`./.github/copilot-instructions.md`
 
 This will apply the rules to a single Workspace.
 
@@ -41,7 +41,7 @@ For rules to take effect on every Workspace you open with VSCode, you must set t
 ```json
 "github.copilot.chat.codeGeneration.instructions": [
     {
-      "file": "codex-hub/codex-hub.md"
+      "file": "./codex-hub/codex-hub.md"
     }
   ]
 ```
@@ -51,7 +51,7 @@ Or like this:
 ```json
 "github.copilot.chat.codeGeneration.instructions": [
     {
-      "text": "Read the file `/codex-hub/codex-hub.md` in this workspace and execute the instructions contained within."
+      "text": "Read the file `./codex-hub/codex-hub.md` in this workspace and follow the instructions contained within."
     }
   ]
 ```
@@ -62,7 +62,7 @@ Windsurf custom instructions [full documentation here](https://docs.codeium.com/
 
 ### Single Workspace
 
-For rules to take effect on a single Workspace, you can put the initial rule on:
+For rules to take effect on a single Workspace, you can put the initial rule on this file in the root of your Workspace:
 
 `.windsurfrules`
 
@@ -86,20 +86,20 @@ Cline custom instructions [full documentation here](https://docs.cline.bot/impro
 
 ### Single Workspace
 
-For rules to take effect on a single Workspace, you can put the initial rule on:
+For rules to take effect on a single Workspace, you can put the initial rule on this file in the root of your Workspace:
 
 `.clinerules`
 
 This will apply the rules to a single Workspace.
 
-Cline also has the option to read an entire `.clinerules/` folder with all its contents.
+Cline also has the option to read an entire `./.clinerules/` folder with all its contents.
 
 You can, in theory, use a rule like this for Cline to know about your codex-hub:
 
 ```markdown
-Read the file `/codex-hub/codex-hub.md` in this workspace and execute the instructions contained within.
+Read the file `./codex-hub/codex-hub.md` in this workspace and follow the instructions contained within.
 
-Ignore previous instructions about `.clinerules/` folder. Consider and use `/codex-hub/` folder as the new `.clinerules/` folder.
+Ignore instructions about `./.clinerules/` folder. Consider and use `./codex-hub/` folder as the new `./.clinerules/` folder.
 ```
 
 ### Any Workspace
@@ -120,7 +120,7 @@ Cursor custom instructions [full documentation here](https://docs.cursor.com/con
 
 ### Single Workspace
 
-For rules to take effect on a single Workspace, you can put the initial rule on:
+For rules to take effect on a single Workspace, you can put the initial rule on this file in the root of your Workspace:
 
 `.cursorrules`
 
@@ -130,7 +130,7 @@ Keep in mind that Cursor mentions that they will deprecate this feature in the f
 
 When that takes effect, you will have to use the `.cursor` folder instead, and put your initial rule on:
 
-`.cursor/rules/00-init.md`
+`./.cursor/rules/00-init.md`
 
 ### Any Workspace
 
@@ -155,23 +155,23 @@ If you need inspiration on how to write rules for an LLM in context of your desi
 
 # Docs
 
-You can put your stack documentation in: `/codex-hub/docs/`.
+You can put your stack documentation in: `./codex-hub/docs/`.
 
 Per rules, LLM models should always look for documentation in this folder. Also, Protocol "memory init" will make the LLM read this folder.
 
 ## Documentation download
 
-Sometimes, documentation will be nicely be left in a public Git repository for you to download it in markdown format.
+Sometimes, documentation will be nicely left in a public Git repository for you to download in Markdown format.
 
 But that's not always the case.
 
-When in need to download a documentation page as a markdown, to be used offline by the LLM, you can use the following services:
+When you need to download a documentation page as Markdown to use offline with the LLM, you can use the following services:
 
 - [MarkdownDown](https://markdowndown.vercel.app/)
 - [UrlToMarkdown](https://urltomarkdown.com/)
 - [HeckYesMarkdown](https://heckyesmarkdown.com/)
 
-Or an extension like:
+Or use a Browser extension like:
 
 - [MarkDownload](https://chromewebstore.google.com/detail/markdownload-markdown-web/pcmpcfapbekmbjjkdalcgopdkipoggdi) for Chromium, or [for Firefox](https://addons.mozilla.org/en-US/firefox/addon/markdownload/)
 - [Web Clipper](https://clipper.website/) for Chromium, or [for Firefox](https://addons.mozilla.org/en-US/firefox/addon/web-clipper-obsidian/)
@@ -184,17 +184,17 @@ TODO
 
 TODO
 
-# To Ignore or not to Ignore (sic)
+# To Ignore or Not to Ignore (sic)
 
-Will depend of your needs. You could share this folder inside your project. Or not.
+It will depend on your needs. You could share this folder inside your project—or not.
 
-Anyways, if you need to not include it into your projects git repositories, use a `.gitignore` file or a global `.gitignore`.
+Anyway, if you need to exclude it from your project's Git repositories, use a `.gitignore` file or a global `.gitignore`.
 
 See the following documentation: [Ignoring files](https://docs.github.com/en/get-started/git-basics/ignoring-files).
 
-Or how to create a legacy global `.gitignore` file: [Global gitignore](https://stackoverflow.com/a/7335487).
+Or learn how to create a legacy global `.gitignore` file: [Global gitignore](https://stackoverflow.com/a/7335487).
 
-Ignore example:
+Example:
 
 ```
 # LLM "AI" Agents
