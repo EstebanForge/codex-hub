@@ -30,7 +30,7 @@ On Workspace root path: `./codex-hub/` folder and all it's subdirectories contai
 ## Implementation Rules
 - **PHP**: WordPress functions > Native PHP 8.2+ (follow PSR-12)
 - **Database**: WordPress functions > wpdb > never direct SQL
-- **CSS**: Theme variables `uploads/css/theme-variables.css` > TailwindCSS > Vanilla CSS
+- **CSS**: Theme variables `uploads/theme/theme-variables.css` > TailwindCSS > Vanilla CSS
 - **JavaScript**: ES6 > HTMX/Hyperscript > AlpineJS
 - **Front-end**: Semantic HTML+ARIA, responsive mobile-first
 - **WordPress**: no core modifications allowed
@@ -57,9 +57,10 @@ On Workspace root path: `./codex-hub/` folder and all it's subdirectories contai
 When `protocol` or `!p` command is received, followed by the protocol name, you need to read the corresponding file inside `./codex-hub/protocols/` folder, and follow the protocol instructions.
 
 Available protocols commands:
-- `memory init` > `./codex-hub/protocols/memory-init.md`
-- `memory update` > `./codex-hub/protocols/memory-update.md`
-- `merge memories` > `./codex-hub/protocols/merge-memories.md`
+- `memory init` > `./codex-hub/protocols/protocol-memory-init.md`
+- `memory update` > `./codex-hub/protocols/protocol-memory-update.md`
+- `merge memories` > `./codex-hub/protocols/protocol-merge-memories.md`
+- `read docs` > `./codex-hub/protocols/protocol-read-docs.md`
 
 Example:
 `!p memory init`

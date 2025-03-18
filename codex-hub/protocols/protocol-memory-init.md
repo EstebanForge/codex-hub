@@ -5,7 +5,7 @@
 - `memory init`
 
 ## Protocol Action
-Read the entire `./codex-hub/memory-logs/` and `./codex-hub/docs/` folders and all files inside those folders..
+Read the entire `./codex-hub/memory-logs/` folder and all files inside those folders..
 
 Newer memory logs should over-ride anything mentioned in older ones. If an old log says "do XYZ like this", but a newer log says "do XYZ like this", newer log must have precedence.
 
