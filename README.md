@@ -15,7 +15,7 @@ Feel free to fork this repository, and adapt it to your needs.
 # Demo
 
 <p align="center">
-    <img src="https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7" />
+    <img src="https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7" style="max-width: 300px;" />
 </p>
 
 # How to use it
