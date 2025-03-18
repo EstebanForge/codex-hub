@@ -1,5 +1,9 @@
 # mAIestro: Codex-Hub for LLMs
 
+<p align="center>
+   <img src="https://media.tenor.com/P6LdibJnUOgAAAAM/opera-bugs-bunny.gif" />
+</p>
+
 My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and Cline.
 
 These base instructions are tailored to be used in projects that use WordPress and some stack of choice.
