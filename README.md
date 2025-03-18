@@ -20,7 +20,9 @@ Alternatively, you can just copy the entire contents of `./codex-hub/codex-hub.m
 
 # Demo
 
-<center>![image](https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7)</center>
+<center>
+    ![image](https://github.com/user-attachments/assets/2e4ff877-6bc1-43be-8eea-fc0aeb96ccc7)
+</center>
 
 # Custom Instructions location
 
