@@ -54,13 +54,17 @@ On Workspace root path: `./codex-hub/` folder and all it's subdirectories contai
 
 ## Protocols
 
-When `!protocol` or `!p` command is received, followed by the protocol name, you need to read the corresponding file inside `./codex-hub/protocols/` folder, and follow the protocol instructions inside the corresponding file.
+When `!p` command is received, followed by the protocol name, you need to read the corresponding file inside `./codex-hub/protocols/` folder, and follow the protocol instructions inside the corresponding file.
+
+Following list is in this format:
+`!p protocol-name` > (read and do) `./codex-hub/protocols/protocol-name.md`
 
 Available protocols commands:
-- `memory init` > `./codex-hub/protocols/protocol-memory-init.md`
-- `memory update` > `./codex-hub/protocols/protocol-memory-update.md`
-- `merge memories` > `./codex-hub/protocols/protocol-merge-memories.md`
-- `read docs` > `./codex-hub/protocols/protocol-read-docs.md`
+- `!p memory init` > `./codex-hub/protocols/protocol-memory-init.md`
+- `!p memory update` > `./codex-hub/protocols/protocol-memory-update.md`
+- `!p core memory` > `./codex-hub/protocols/protocol-core-memory.md`
+- `!p merge memories` > `./codex-hub/protocols/protocol-merge-memories.md`
+- `!p read docs` > `./codex-hub/protocols/protocol-read-docs.md`
 
 Example:
 `!p memory init`
