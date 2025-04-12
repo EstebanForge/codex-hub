@@ -4,7 +4,7 @@
    <img src="https://i.imgur.com/dYrqu3v.gif" />
 </p>
 
-My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and/or Cline.
+My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and/or Cline, Roo Code, Kilo Code.
 
 These base instructions are tailored to be used in projects that use WordPress and some stack of choice.
 
@@ -90,9 +90,13 @@ In the file that will open, paste the initial rule.
 
 This will apply to every Workspace you open with Windsurf.
 
-## Cline (VSCode plugin)
+## Cline, Roo Code, Kilo Code (VSCode plugin)
 
 Cline custom instructions [full documentation here](https://docs.cline.bot/improving-your-prompting-skills/prompting).
+
+Roo Code custom instructions [full documentation here](https://docs.roocode.com/features/custom-instructions).
+
+Kilo Code custom instructions are the same as Roo Code's.
 
 ### Single Workspace
 
@@ -100,29 +104,35 @@ For rules to take effect on a single Workspace, you can put the initial rule on 
 
 `.clinerules`
 
+`.roorules`
+
 This will apply the rules to a single Workspace.
 
-Cline also has the option to read an entire `./.clinerules/` folder with all its contents.
+Cline/Roo also has the option to read an entire `./.clinerules/` / `./.roo/` folder with all its contents.
 
-You can, in theory, use a rule like this for Cline to know about your codex-hub:
+You can, in theory, use a rule like this for Cline/Roo to know about your codex-hub:
 
 ```markdown
 Read the file `./codex-hub/codex-hub.md` in this workspace and follow the instructions contained within.
 
-Ignore instructions about `./.clinerules/` folder. Consider and use `./codex-hub/` folder as the new `./.clinerules/` folder.
+Ignore instructions about `./.clinerules/`/`./.roo/` folder. Consider and use `./codex-hub/` folder as the new `./.clinerules/` folder.
 ```
 
 ### Any Workspace
 
-To apply the rules to every Workspace you open with Cline, you must use the following option:
+To apply the rules to every Workspace you open with Cline/Roo, you must use the following option:
 
 ```
 Open Cline (sidebar) > Settings (top right) > Custom Instructions
 ```
 
+```
+Open Roo (sidebar) > Prompt Tabs > Custom Instructions for all models
+```
+
 Paste the initial rule into the displayed text area.
 
-This will apply to every Workspace you open with Cline.
+This will apply to every Workspace you open with Cline/Roo.
 
 ## Cursor
 

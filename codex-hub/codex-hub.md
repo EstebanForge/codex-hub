@@ -54,7 +54,7 @@ On Workspace root path: `./codex-hub/` folder and all it's subdirectories contai
 
 ## Protocols
 
-When `protocol` or `!p` command is received, followed by the protocol name, you need to read the corresponding file inside `./codex-hub/protocols/` folder, and follow the protocol instructions.
+When `!protocol` or `!p` command is received, followed by the protocol name, you need to read the corresponding file inside `./codex-hub/protocols/` folder, and follow the protocol instructions inside the corresponding file.
 
 Available protocols commands:
 - `memory init` > `./codex-hub/protocols/protocol-memory-init.md`
