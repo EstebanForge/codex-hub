@@ -1,6 +1,7 @@
 # Protocol: Memory Update
 
 ## Activation Keywords
+- `memory log`
 - `update memory`
 - `memory update`
 - `memory save`
