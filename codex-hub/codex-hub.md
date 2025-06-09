@@ -11,7 +11,7 @@
 2. **Code Approach**
     - Check existing solutions first
     - Read files content completely
-    - Ensure code modularity (multiple files) and avoid a monolith approach (one giant file). When a file is over 300 LOC, split into multiple files with clear division of concerns
+    - Ensure code modularity (multiple files) and avoid a monolith approach (one giant file). When a file is over 500 LOC, split into multiple files with clear division of concerns
     - Ensure writing maintainable code
 3. **Decision Process**
     - Start simple → validate → consider performance → ensure junior-friendly → verify security
@@ -30,7 +30,7 @@ On Workspace root path: `./codex-hub/` folder and all it's subdirectories contai
 ## Implementation Rules
 - **PHP**: WordPress functions > Native PHP 8.2+ (follow PSR-12)
 - **Database**: WordPress functions > wpdb > never direct SQL
-- **CSS**: Theme variables `uploads/theme/theme-variables.css` > TailwindCSS > Vanilla CSS
+- **CSS**: WordPress CSS variables > Theme CSS variables > TailwindCSS + CSS variables > Vanilla CSS. Also add IDs and classes to HTML following BEM conventions, for 3rd party styling
 - **JavaScript**: ES6 > HTMX/Hyperscript > AlpineJS
 - **Front-end**: Semantic HTML+ARIA, responsive mobile-first
 - **WordPress**: no core modifications allowed
@@ -43,8 +43,8 @@ On Workspace root path: `./codex-hub/` folder and all it's subdirectories contai
 
 ## Integration Approach
 - Utilize WordPress actions/filters
-- Create custom hooks when needed
-- Return proper status codes
+- Create custom hooks (actions, filters) when appropiate or needed
+- Return proper status codes. If using HTMX, always return HTML instead of JSON
 
 ## Quality Control
 1. Check requirements and existing code
