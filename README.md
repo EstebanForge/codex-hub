@@ -1,12 +1,12 @@
-# mAIestro: Codex-Hub for LLMs
+# Codex-Hub for LLMs
 
 <p align="center">
    <img src="https://i.imgur.com/dYrqu3v.gif" />
 </p>
 
-My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and/or Cline, Roo Code, Kilo Code.
+My personal workflow and knowledge base to work with LLM models on VSCode with Copilot, Windsurf and/or Cline.
 
-These base instructions are tailored to be used in projects that use WordPress and some stack of choice.
+These base instructions are tailored to be used in projects that use PHP, WordPress and some other stack of choice.
 
 The contents of these files will change over time. No changelog will be provided. No time for that, I'm sorry.
 
@@ -90,7 +90,7 @@ In the file that will open, paste the initial rule.
 
 This will apply to every Workspace you open with Windsurf.
 
-## Cline, Roo Code, Kilo Code (VSCode plugin)
+## Cline (VSCode plugin)
 
 Cline custom instructions [full documentation here](https://docs.cline.bot/improving-your-prompting-skills/prompting).
 
@@ -177,9 +177,17 @@ If you need inspiration on how to write rules for an LLM in context of your desi
 
 You can put your stack documentation in: `./codex-hub/docs/`.
 
-Per rules, LLM models should always look for documentation in this folder. Also, Protocol "memory init" will make the LLM read this folder.
+Per rules, LLM models should always look for documentation in this folder. Also, Workflow "memory init" will make the LLM read this folder.
 
-## Documentation download
+## Documentation for LLMs
+
+### MCP Server
+
+Leverage the power of [Context7](https://context7.com) to give LLMs access to up to date documentation on millions of libraries and frameworks.
+
+See how to install [Context7 MCP Server](https://github.com/upstash/context7).
+
+### Manual download
 
 Sometimes, documentation will be nicely left in a public Git repository for you to download in Markdown format.
 
@@ -195,14 +203,6 @@ Or use a Browser extension like:
 
 - [MarkDownload](https://chromewebstore.google.com/detail/markdownload-markdown-web/pcmpcfapbekmbjjkdalcgopdkipoggdi) for Chromium, or [for Firefox](https://addons.mozilla.org/en-US/firefox/addon/markdownload/)
 - [Web Clipper](https://clipper.website/) for Chromium, or [for Firefox](https://addons.mozilla.org/en-US/firefox/addon/web-clipper-obsidian/)
-
-# Memory Logs
-
-TODO
-
-# Sample Data
-
-TODO
 
 # To Ignore or Not to Ignore (sic)
 
