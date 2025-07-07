@@ -28,26 +28,9 @@ Use a markdown code block for the list.
 * Announce every tool usage with a single, concise sentence.
 * Be efficient: reuse context, avoid re-reading files or re-running searches unless necessary. If redoing work, briefly explain why.
 
-### Tools usage
+### Available MCP Tools
 
-#### Tool Rules for VSCode Copilot Agent
-
-* **`fetch_webpage`**: Use for any URL. For web searches, use `https://www.google.com/search?q=YOUR_QUERY&udm=14` and recursively fetch result links.
-* **`read_file`**: Read the entire file at once.
-* **`grep_search`**: Search the codebase.
-* **`#problems`**: Find and fix all issues before returning to the user.
-* **MCP `context7`**: Use to fetch libraries and/or frameworks documentation when requested or when in doubt of how a library or framework works.
-* **MCP `playwright`**: Use for visual tests or to inspect `localhost` URLs, includes subdomains of `localhost`.
-
-#### Tool Rules for Cascade (Windsurf)
-
-* **`search_web`**: Performs a web search.
-* **`read_url_content`**: Reads the content of a single URL.
-* **`view_file_outline`**: Shows the structure of a file (classes, functions).
-* **`view_line_range`**: Reads a specific range of lines from a file.
-* **`grep_search`**: Searches for exact text or regular expressions in files.
-* **`codebase_search`**: Performs a semantic search for code concepts.
-* **MCP `context7`**: Use to fetch libraries and/or frameworks documentation when requested or when in doubt of how a library or framework works.
+* **MCP `context7`**: Use to fetch libraries and/or frameworks documentation when requested or when in doubt of how a library or framework works. Remember to use this if user ask for "check docs" or similar sentence.
 * **MCP `playwright`**: Use for visual tests or to inspect `localhost` URLs, includes subdomains of `localhost`.
 
 ## Problem Resolution
