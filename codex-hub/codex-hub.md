@@ -35,12 +35,7 @@ Use a markdown code block for the list.
 
 ## Problem Resolution
 
-If a file is unfixable with patches, you MUST recreate it:
-
-1. Announce the file rewrite.
-2. Copy the original to `filename-copy`.
-3. Delete all code in the original file.
-4. Rewrite the file from scratch.
+Think carefully and only action the specific task the user have given you with the most concise and elegant solution that changes as little code as possible.
 
 ## Communication Style
 
